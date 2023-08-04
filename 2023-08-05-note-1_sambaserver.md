@@ -16,6 +16,8 @@ https://adamtheautomator.com/samba-active-directory/
 
 https://www.considerednormal.com/2022/11/samba-based-active-directory-on-ubuntu-22-04/
 
+https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.management/add-computer
+
 https://www.server-world.info/en/note?os=Debian_11&p=realmd
 
 # Set hostname as "DC1"
