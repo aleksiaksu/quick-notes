@@ -99,7 +99,7 @@ Place to last lines:
 # Bind the chrony service to IP Address
 bindcmdaddress aaa.bbb.ccc.ddd
 # Allow clients on the network to connect to the Chrony NTP server
-allow aaa.bbb.ccc.ddd/24
+allow 0.0.0.0/8
 # Specify the ntpsigndsocket directory for the Samba AD
 ntpsigndsocket /var/lib/samba/ntp_signd
 ```
