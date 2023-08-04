@@ -37,7 +37,7 @@ nameserver 1.1.1.1
 
 # Install needed packages from apt
 
-sudo apt install acl attr chrony samba samba-common samba-common-bin samba-dsdb-modules samba-vfs-modules smbclient winbind libpam-winbind libnss-winbind libpam-krb5 krb5-config krb5-user dnsutils net-tools dnsmasq
+sudo apt -y install acl attr chrony samba samba-common samba-common-bin samba-dsdb-modules samba-vfs-modules smbclient winbind libpam-winbind libnss-winbind libpam-krb5 krb5-config krb5-user dnsutils net-tools dnsmasq
 
 # Example hosts for DNSMasq
 
@@ -123,6 +123,8 @@ host -t A example.lan && host -t A dc1.example.lan && host -t SRV _kerberos._udp
 
 # Example open ports for ufw
 
+sudo apt -y ufw
+
 sudo ufw allow proto tcp from 0.0.0.0/8 to any port 53,636
 
 sudo ufw allow proto udp from 0.0.0.0/8 to any port 53,636
@@ -134,6 +136,8 @@ sudo ufw allow proto udp from 0.0.0.0/8 to any port 3268,3269
 sudo ufw allow proto tcp from 0.0.0.0/8 to any port 49152,65535
 
 sudo ufw allow proto udp from 0.0.0.0/8 to any port 49152,65535
+
+sudo ufw enable
 
 # Test your domain
 
@@ -153,7 +157,7 @@ Computer will join the domain and it will take a time, then restarts.
 
 # Debian-like Workstation
 
-sudo apt install krb5-user realmd libnss-sss sssd sssd-tools adcli samba-common-bin oddjob oddjob-mkhomedir package libpam-mkhomedir libsss-sudo packagekit
+sudo apt -y install krb5-user realmd libnss-sss sssd sssd-tools adcli samba-common-bin oddjob oddjob-mkhomedir package libpam-mkhomedir libsss-sudo packagekit
 
 sudo nano /etc/sudoers.d/domain_admins
 
