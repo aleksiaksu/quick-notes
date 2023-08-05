@@ -1,6 +1,6 @@
 # How to make own local certificate?
 
-I recommend, if you have not using global domain name and you want to use local domain names instead.
+I recommend, if you are not using global domain name and you want to use local domain names instead.
 
 Or you can use this quick guide for your development environment. I do not recommend for use in production environments.
 
