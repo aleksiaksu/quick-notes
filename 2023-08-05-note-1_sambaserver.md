@@ -1,4 +1,4 @@
-# Samba server
+# Project: Samba Active Directory & Domain Controller with DNSMasq
 
 Tested features:
 
@@ -58,7 +58,7 @@ sudo nano /etc/dnsmasq.d/example.records.conf
 Place to lines:
 
 ```
-srv-host=_ldap._tcp.example.lan,dc1.example.lan,389`
+srv-host=_ldap._tcp.example.lan,dc1.example.lan,389
 srv-host=_kerberos._udp.example.lan,dc1.example.lan,88
 srv-host=_kerberos._tcp.example.lan,dc1.example.lan,88
 srv-host=_kerberos-adm._tcp.example.lan,dc1.example.lan,749
